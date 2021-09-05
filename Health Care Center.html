@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+::placeholder {
+color: #40E0D0;
+opacity: 2;
+}
+input[type="email"], input[type="tel"], input[type="number"], input[type="text"],
+input[type="date"], textarea, select, #services #address {
+width: 85%;
+color: #40E0D0;
+font-weight: bold;
+background: transparent;
+border-radius: 6px;
+border-style: solid;
+border-width: 2px;
+border-color: #FFA07A;
+}
+input[type="button"] {
+background-color: #08088A;
+}
+input[type="checkbox"]#terms:checked+a {
+color: #FFFF00;
+}
+body {
+/* Fill the attribute and value */
+background-color: #191970;
+}
+h3 {
+/* Fill the attributes and values */
+color: #FFFFFF;
+background-color: #696969;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+width: 40%;
+font-family: Verdana;
+border-radius: 6px;
+border-style: 1px solid;
+}
+label span{
+color: #F0F8FF;
+}
+table {
+/* Fill the attributes and values */
+width: 30%;
+border-style: 3px groove;
+margin-left: auto;
+margin-right: auto;
+border-radius: 6px;
+border-spacing: 5px;
+}
+#appointment td {
+/* Fill the attributes and values */
+border-width: 1px;
+border-color: #f4a460;
+border-style: solid;
+font: 15px;
+padding: 8px;
+}
+#terms_ref {
+color: #9ACD32;
+}
+#submit {
+/* Fill the attributes and values */
+color: #ffefd5;
+font-weight: bold;
+background: transparent;
+border-radius: 6px;
+}
+#submit:hover {
+background-color: #8B4513;
+color: #FFFFFF;
+}
+#services{
+border-radius: 25px;
+}
+#serviceList{
+border-radius: 25px;
+}
+p.b {
+width: 50%;
+margin-left: auto;
+margin-right: 14em;
+color: #90EE90;
+box-sizing: border box;
+}
+</style>
+</head>
+<body>
+<h3>Health Care Center</h3>
+<table id="appointment" border="5" width="100%" height="150">
+<tr>
+<th id="details" colspan="2"></th>
+</tr>
+<tr>
+<td>
+<label><span><b>Name*</b></span>:</label>
+</td>
+<td>
+<input type="text" id="name" placeholder="Enter your name"
+name="Name">
+</td>
+</tr>
+<tr>
+<td>
+<label><span><b>Gender*</b></span>:</label>
+</td>
+<td>
+<!-- Fill the code for Gender -->
+<input type="radio" id="male" name="gender" value="male"
+><label><span><b> Male </b></span></label>
+<input type="radio" id="female" name="gender"
+value="female" ><label><span><b> Female</b></span></label>
+<input type="radio" id="others" name="gender" value="others"
+> <label><span><b> Others</b></span></label>
+</td>
+</tr>
+<tr>
+<td>
+<label><span><b>E-mail address</b></span>:</label>
+</td>
+<td>
+<!-- Fill the code for E-mail address -->
+<input type = "text" id="email"
+placeholder="example:abc@gmail.com" name="email">
+</td>
+</tr>
+<tr>
+<td>
+<label><span><b>Mobile No*</b></span>:</label>
+</td>
+<td>
+<input type = "number" id="mobileNo" placeholder="Enter your
+mobileNo" name="phone">
+</td>
+</tr>
+<tr>
+<td>
+<label><span><b>Services*</b></span>:</label>
+</td>
+<td>
+<input type="text" name="service" id="services">
+<datalist id ="serviceList">
+<option value="Dentistry">
+<option value="Midwifery">
+<option value="Nursing">
+<option value="Medicine">
+<option value="Optometry">
+<option value="Psychology">
+<option value="Physical">
+<option value="Others">
+</datalist>
+</td>
+</tr>
+<tr>
+<td>
+<label><span><b>Date*</b></span>:</label>
+</td>
+<td>
+<input type="number" id="date" placeholder="mm/dd/yyyy"
+name="name">
+</td>
+</tr>
+<tr>
+<td>
+<label><span><b>Time*</b></span>:</label>
+</td>
+<td>
+<!-- Fill the code for Time -->
+<select name="time" id="time" placeholder="Select one-">
+<option value="-Select one-"> - Select one</option>
+<option value="10.00AM">10.00AM</option>
+<option value="10.30AM">10.30AM</option>
+<option value="11.00AM">11.00AM</option>
+<option value="11.30AM">11.30AM</option>
+<option value="12.00PM">12.00PM</option>
+<option value="12.30PM">12.30PM</option>
+<option value="1.00PM">1.00PM</option>
+<option value="1.30PM">1.30PM</option>
+<option value="2.00PM">2.00PM</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<label><span><b>Address</b></span>:</label>
+</td>
+<td>
+<!-- Fill the code for Address -->
+<textarea id="address" rows="5" cols="25" placeholder="Enter
+your address"></textarea>
+</td>
+</tr>
+</table>
+<p class="b"> <label for="checkbox1" class="checkboxes"> <input type="checkbox"
+id="terms_ref" name="checked" value="yes" class="checkboxes"><a href="#submit"> I
+agree to terms of service and privacy policy. </a></label></p>
+<p class="b"><input type="button" id="submit" value="submit"></p>
+</body>
+</html>
